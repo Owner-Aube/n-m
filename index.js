@@ -96,4 +96,4 @@ fs.readdir('./Events/', (error, f) => {
         
 });
 
-client.login('NjczNDY2MzkxNzM4ODQzMTY3.Xk_75A.bZptj09MHbfjJ1pU6pCpc4ylIGs');
+client.login('Njg5ODk4MTA0MTIzNjg2OTU1.XnJjuA.aGMa5cx_EHihm3-tVcp34NkOTeQ');
