@@ -1,0 +1,18 @@
+{
+  "name": "renaissance",
+  "version": "0.1.0",
+  "description": "Renaissance le bot discord de la renaissance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NeeZun Kun",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "fortnite": "^4.3.2",
+    "fs": "0.0.1-security",
+    "moment": "^2.24.0",
+    "ms": "^2.1.2"
+  }
+}
