@@ -39,7 +39,7 @@ client.on('message', message => {
             .addField("**__Nombre Obtenu__**", `${nb}`)
         message.channel.send(zteamrollEmbed)
         }
-    }
+    })
 })
 
 client.on('message', message => {
