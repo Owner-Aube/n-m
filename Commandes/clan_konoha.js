@@ -21,7 +21,7 @@ module.exports.run = (client, message, args) => {
 
     const answer = answers[Math.floor(Math.random() * answers.length)];
 	
-	message.reply("\n ``` ```\n **__Clan Uchiwa (うちは一族__**\n \`\`\`diff\n- Le clan Uchiwa (うちは一族, Uchiha Ichizoku) était autrefois considéré comme le plus puissant clan de Konoha et un des plus puissants du monde ninja (avec pour seul et unique rival le clan Senju avec lequel il fonda Konoha).\`\`\`\n ``` ``` \n https://media1.giphy.com/media/8qXJTU5oEhQZO/giphy.gif")
+	message.reply(answer)
 };
 
 module.exports.help = {
