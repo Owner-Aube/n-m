@@ -13,7 +13,6 @@ module.exports.run = (client, message, args) => {
 
     const answer = answers[Math.floor(Math.random() * answers.length)];
 
-        message.reply(answer)
 };
 
 module.exports.help = {
