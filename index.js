@@ -29,7 +29,6 @@ client.on('message', message =>{
 
 client.on('message', message => {
     if(message.content.startsWith('.r')) {
-        if(message.member.roles.find("name", "👑︱Fondateur【創業者】")){
         let args = message.content.split(' ').slice(1); 
         if(!args[0]) return message.reply("Veuillez mettre un nombre");
         let nb = Math.floor(Math.random() * args[0]);
@@ -39,8 +38,6 @@ client.on('message', message => {
             .addField("**__Ton Roll__**", `${args[0]}`)
             .addField("**__Nombre Obtenu__**", `${nb}`)
         message.channel.send(zteamrollEmbed)
-        }else{
-            message.channel.send('**__Je suis désolé, tu n\'es pas evee ou NeeZun.__**')
         }
     }
 })
