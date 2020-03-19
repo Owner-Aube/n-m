@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
   let uCoins = coins[message.author.id].coins;
 
 
-  let coinEmbed = new Discord.MessageEmbed()
+  let coinEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .addField("**__Vos Coins 💰__**", uCoins);
 
