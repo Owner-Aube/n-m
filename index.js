@@ -19,7 +19,6 @@ client.on("message", message => {
         userInfo.xp = 0
         message.reply("Félicitation ! Tu viens de monté de 1 niveau !")
     }
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     if(cmd === "info") {
         let userInfo = db[message.author.id];
