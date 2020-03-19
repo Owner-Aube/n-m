@@ -27,7 +27,7 @@ client.on('message', message =>{
   })
 
 
-client.on('message', message => {
+  client.on('message', message => {
     if(message.content.startsWith('.r')) {
         let args = message.content.split(' ').slice(1); 
         if(!args[0]) return message.reply("Veuillez mettre un nombre");
@@ -40,7 +40,6 @@ client.on('message', message => {
         message.channel.send(zteamrollEmbed)
         }
     })
-})
 
 client.on('message', message => {
     if(message.content.startsWith('.say')) {
