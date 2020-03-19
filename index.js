@@ -10,8 +10,6 @@ const db = low(adapters);
  
 db.defaults({ histoires : [], xp: []}).write()
  
-(fait npm install lowdb dans Visual Code Sutdio)
- 
 bot.on('message', message => {
    
     var msgauthor = message.author.id
