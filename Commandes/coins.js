@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
 
   let coinEmbed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .addField("**__Vos Coins 💰__**", uCoins);
+  .addField("**__Vos Ryos d'or 💰__**", uCoins);
 
   message.channel.send(coinEmbed);//.then(msg => {msg.delete(5000)});
 
