@@ -19,5 +19,5 @@ module.exports.run = (client, message, args) => {
 };
 
 module.exports.help = {
-    name: 'nrp!clan-suna'
+    name: 'nrp!clan-kumo'
 };
