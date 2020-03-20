@@ -16,7 +16,7 @@ module.exports.run = (client, message, args) => {
     let role = message.guild.roles.find((r) => r.name.toLowerCase() === args.join(' ').toLowerCase() || r.id === args.join(' '));
     
     message.reply(answer)
-    	member.removeRole('690566340448354346')
+	member.removeRole('690566182096470026')
 
 };
 
