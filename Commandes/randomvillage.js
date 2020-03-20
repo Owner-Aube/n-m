@@ -12,8 +12,11 @@ let answers = [
 module.exports.run = (client, message, args) => {
 
     const answer = answers[Math.floor(Math.random() * answers.length)];
+        let member = message.guild.member(message.author.id);
+    let role = message.guild.roles.find((r) => r.name.toLowerCase() === args.join(' ').toLowerCase() || r.id === args.join(' '));
     
     message.reply(answer)
+    	member.removeRole('690566340448354346')
 
 };
 
