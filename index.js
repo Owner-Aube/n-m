@@ -62,7 +62,38 @@ if(message.member.roles.find("name", "[🌌] Genkidama")){
     }
 })
 
-//fin dbz rp
+//Système d'xp
+        
+        client.on("message", async message => {
+  let addExp = Math.floor(Math.random() * 0,1) + 1;
+
+  if (!exp[message.author.id]) {
+      exp[message.author.id] = {
+          exp: 0,
+          niveau: 1
+      };
+  }
+
+  let currentExp = exp[message.author.id].exp;
+  let currentNiv = exp[message.author.id].niveau;
+  let nextLevel = currentNiv * 80;
+  exp[message.author.id].exp = currentExp + addExp;
+
+  if(nextLevel <= currentExp) {
+      exp[message.author.id].niveau += 1;
+      message.channel
+        .send(`Félicitation jeune Shinobi ! tu es passé niveau ${currentNiv + 1}, Continue comme ça pour accomplir ton Nindo !`)
+        .then(msg => {
+            msg.delete(5000);
+        });
+  }
+
+  fs.writeFile('./exp.json', JSON.stringify(exp), err => {
+      if (err) console.log(err);
+  })
+});
+        
+ //fin syst d'exp
 
     }})
 
