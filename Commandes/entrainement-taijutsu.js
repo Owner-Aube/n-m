@@ -82,5 +82,5 @@ module.exports.run = (client, message, args) => {
 }
 
 module.exports.help = {
-    name: 'entrainement-kekkei'
+    name: 'entrainement-taijutsu'
 };
