@@ -14,11 +14,11 @@ module.exports.run = (client, message, args) => {
     let mention = message.author.id
     let CooldownRole = message.guild.roles.find("name", "Cooldown")
     let answer = answers[Math.floor(Math.random() * answers.length)]
-    let KekkeiD = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓓ ➤ +１０００")
-    let KekkeiC = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓒ ➤ +２０００")
-    let KekkeiB = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓑ ➤ +３０００")
-    let KekkeiA = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓐ ➤ +４０００")
-    let KekkeiS = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓢ ➤ +５０００")
+    let KekkeiD = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓓ ➤ +１０")
+    let KekkeiC = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓒ ➤ +２０")
+    let KekkeiB = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓑ ➤ +３０")
+    let KekkeiA = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓐ ➤ +４０")
+    let KekkeiS = message.guild.roles.find("name", "『🈹』Kekkei Genkai Ⓢ ➤ +５０")
     
         if(message.content.startsWith('!entrainement')){
             if (talkedRecently.has(message.author.id)) {
