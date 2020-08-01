@@ -14,11 +14,11 @@ module.exports.run = (client, message, args) => {
     let mention = message.author.id
     let CooldownRole = message.guild.roles.find("name", "Cooldown")
     let answer = answers[Math.floor(Math.random() * answers.length)]
-    let KekkeiD = message.guild.roles.find("name", "@『❤️』Ninjutsu Médical Ⓓ ➤ +３０")
-    let KekkeiC = message.guild.roles.find("name", "@『❤️』Ninjutsu Médical Ⓒ ➤ +６０")
-    let KekkeiB = message.guild.roles.find("name", "@『❤️』Ninjutsu Médical Ⓑ ➤ +９０")
-    let KekkeiA = message.guild.roles.find("name", "@『❤️』Ninjutsu Médical Ⓐ ➤ +１２０")
-    let KekkeiS = message.guild.roles.find("name", "@『❤️』Ninjutsu Médical Ⓢ ➤ +１５０")
+    let KekkeiD = message.guild.roles.find("name", "『❤️』Ninjutsu Médical Ⓓ ➤ +３０")
+    let KekkeiC = message.guild.roles.find("name", "『❤️』Ninjutsu Médical Ⓒ ➤ +６０")
+    let KekkeiB = message.guild.roles.find("name", "『❤️』Ninjutsu Médical Ⓑ ➤ +９０")
+    let KekkeiA = message.guild.roles.find("name", "『❤️』Ninjutsu Médical Ⓐ ➤ +１２０")
+    let KekkeiS = message.guild.roles.find("name", "『❤️』Ninjutsu Médical Ⓢ ➤ +１５０")
     
         if(message.content.startsWith('!entrainement')){
             if (talkedRecently.has(message.author.id)) {
@@ -36,14 +36,14 @@ module.exports.run = (client, message, args) => {
 
                 if (answer === answers[1]) {
                 member.addRole("700314762445062154")
-                if(message.member.roles.find(r => r.name === "@『❤️』Ninjutsu Médical Ⓓ ➤ +３０")){
+                if(message.member.roles.find(r => r.name === "『❤️』Ninjutsu Médical Ⓓ ➤ +３０")){
                     member.addRole("700314798436384800")
-                    if(message.member.roles.find(r => r.name === "@『❤️』Ninjutsu Médical Ⓒ ➤ +６０ ")){
+                    if(message.member.roles.find(r => r.name === "『❤️』Ninjutsu Médical Ⓒ ➤ +６０ ")){
                         member.addRole("700314816010649681")
-                        if(message.member.roles.find(r => r.name === "@『❤️』Ninjutsu Médical Ⓑ ➤ +９０")){
+                        if(message.member.roles.find(r => r.name === "『❤️』Ninjutsu Médical Ⓑ ➤ +９０")){
 
                         member.addRole("700314830803828786")
-                        if(message.member.roles.find(r => r.name === "@『❤️』Ninjutsu Médical Ⓐ ➤ +１２０")){
+                        if(message.member.roles.find(r => r.name === "『❤️』Ninjutsu Médical Ⓐ ➤ +１２０")){
                             member.addRole("700314844137521172")
                         }else{
 
