@@ -13,10 +13,10 @@ module.exports.run = (client, message, args) => {
     let mention = message.author.id
     let CooldownRole = message.guild.roles.find("name", "Cooldown")
     let answer = answers[Math.floor(Math.random() * answers.length)]
-    let KekkeiD = message.guild.roles.find("name", "『🉐』Taijutsu Ⓓ ➤ +１０ ")
-    let KekkeiC = message.guild.roles.find("name", "『🉐』Taijutsu Ⓒ ➤ +２０ ")
-    let KekkeiB = message.guild.roles.find("name", "『🉐』Taijutsu Ⓑ ➤ +３０ ")
-    let KekkeiA = message.guild.roles.find("name", "『🉐』Taijutsu Ⓐ ➤ +４０ ")
+    let KekkeiD = message.guild.roles.find("name", "『🉐』Taijutsu Ⓓ ➤ +１０")
+    let KekkeiC = message.guild.roles.find("name", "『🉐』Taijutsu Ⓒ ➤ +２０")
+    let KekkeiB = message.guild.roles.find("name", "『🉐』Taijutsu Ⓑ ➤ +３０")
+    let KekkeiA = message.guild.roles.find("name", "『🉐』Taijutsu Ⓐ ➤ +４０")
     let KekkeiS = message.guild.roles.find("name", "『🉐』Taijutsu Ⓢ ➤ +５０")
     
         if(message.content.startsWith('!entrainement')){
@@ -34,14 +34,14 @@ module.exports.run = (client, message, args) => {
 
                 if (answer === answers[1]) {
                 member.addRole("700308181494267944")
-                if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓓ ➤ +１０ ")){
+                if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓓ ➤ +１０")){
                     member.addRole("700308256488423514")
-                    if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓒ ➤ +２０ ")){
+                    if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓒ ➤ +２０")){
                         member.addRole("700308292630741005")
-                        if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓑ ➤ +３０ ")){
+                        if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓑ ➤ +３０")){
 
                         member.addRole("700308329641279488")
-                        if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓐ ➤ +４０ ")){
+                        if(message.member.roles.find(r => r.name === "『🉐』Taijutsu Ⓐ ➤ +４０")){
                             member.addRole("700308366097907733")
                         }else{
 
