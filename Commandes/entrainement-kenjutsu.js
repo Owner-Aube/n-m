@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const talkedRecently = new Set();
 
 const answers = [
     "Votre entrainement n'a pas aboutit à quelque chose de correct",
@@ -21,7 +20,6 @@ module.exports.run = (client, message, args) => {
     let KekkeiS = message.guild.roles.find("name", "『🈯️』Kenjutsu Ⓢ ➤ +５０")
     
         if(message.content.startsWith('!entrainement')){
-            if (talkedRecently.has(message.author.id)) {
 
                 message.channel.send("Votre personnage est trop fatigué pour s'entrainer, veuillez patienter.")
 
@@ -72,11 +70,6 @@ module.exports.run = (client, message, args) => {
         }
 
 
-    }
-        talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          talkedRecently.delete(message.author.id);
-        }, 21600000);
 
     
 }
