@@ -34,6 +34,7 @@ module.exports.run = (client, message, args) => {
 
                 if (answer === answers[1]) {
                 member.addRole("700311430288900147")
+                                        message.channel.send("``` ```\n**Bravo ! Tu as réussi avec succès ton entraînement !**\n\n``` ```")
                 if(message.member.roles.find(r => r.name === "『🈯️』Kenjutsu Ⓓ ➤ +１０")){
                     member.addRole("700311498416848976")
                     if(message.member.roles.find(r => r.name === "『🈯️』Kenjutsu Ⓒ ➤ +２０")){
