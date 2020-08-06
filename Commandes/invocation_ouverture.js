@@ -22,6 +22,7 @@ let mention = message.author.id
 
 if(message.member.roles.find("name", "『📦』Pack Opening ➤ Ticket d'Invocation d'ouverture")){
     message.reply(`<@${mention}> ${anwser}`)
+    client.channels.get("727886694820610128").send(`<@${mention}> ${anwser}`)
     member.removeRole('704300242593513603')
 
   }else{
