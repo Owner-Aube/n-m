@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 let answers = [
-    "``` ```\n***``『💖』GG tu as obtenu "la Création et Renouveau (創造再生, Sôzô Saisei)"``***\n\n``` ```",
+    "``` ```\n***``『💖』GG tu as obtenu la Création et Renouveau (創造再生, Sôzô Saisei)``***\n\n``` ```",
     "``` ```\n***``『💗』GG tu gagnes un niveau en ninjutsu médical``***\n\n``` ```",
     "``` ```\n***``『💗』GG tu gagnes un niveau en ninjutsu médical``***\n\n``` ```",
     "``` ```\n***``『💕』GG tu gagnes 25 ramens``***\n\n``` ```",
