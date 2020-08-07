@@ -20,7 +20,7 @@ const helpEmbed = new Discord.RichEmbed()
 	.setTitle('OMG ça modifie')
 	.setDescription('Sub to missivi');
 
-message.edit(exampleEmbed);
+message.edit(helpEmbed);
 
     };
 
