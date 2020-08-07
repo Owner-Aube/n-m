@@ -14,6 +14,13 @@ const helpEmbed = new Discord.RichEmbed()
         .setImage(answer)
         .addField('**Evee**', '*Shadow legend*')
     message.channel.send(helpEmbed);
+    
+    
+    const exampleEmbed = new Discord.MessageEmbed()
+	.setTitle('OMG ça modifie')
+	.setDescription('Sub to missivi');
+
+message.edit(exampleEmbed);
 
     };
 
