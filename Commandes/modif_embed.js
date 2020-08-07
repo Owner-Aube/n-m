@@ -16,7 +16,7 @@ const helpEmbed = new Discord.RichEmbed()
     message.channel.send(helpEmbed);
     
     
-    const exampleEmbed = new Discord.MessageEmbed()
+    const helpEmbed = new Discord.MessageEmbed()
 	.setTitle('OMG ça modifie')
 	.setDescription('Sub to missivi');
 
