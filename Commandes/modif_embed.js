@@ -1,39 +1,22 @@
-// at the top of your file
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+const answers = [
+    'https://media.giphy.com/media/ZL2iRxhnDwtSE/giphy.gif'
+]
 
-// inside a command, event listener, etc.
-const exampleEmbed = new Discord.MessageEmbed()
-	.setColor('#0099ff')
-	.setTitle('Titre 1')
-	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addFields(
-		{ name: 'Regular field title', value: 'Some value here' },
-		{ name: '\u200B', value: '\u200B' },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-	)
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
-	.setTimestamp()
-    .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-    
-    // Envoi du premier message 
+module.exports.run = (client, message, args) => {
 
-channel.send(exampleEmbed);
+    const answer = answers[Math.floor(Math.random() * answers.length)]
+const helpEmbed = new Discord.RichEmbed()
 
-// Modification du message
 
-const exampleEmbed = new Discord.MessageEmbed()
-	.setTitle('Titre 2')
-    .setDescription('Description after the edit');
-    
-    // Modification du message
+        .setTitle('**Test version 1**')
+        .setColor('#FF0000')
+        .setImage(answer)
+        .addField('**Evee**', '*Shadow legend*')
+    message.channel.send(helpEmbed);
 
-message.edit(exampleEmbed);
+    };
 
-module.exports.help = {
-    name: 'test-embed'
-};
+    module.exports.help = {
+        name: 'test-embed'
+   };
